@@ -1,0 +1,13 @@
+User Registration
+Endpoint: POST /register
+Body: { "username": "string", "password": "string" }
+Response: 201 Created
+User Login
+Endpoint: POST /login
+Body: { "username": "string", "password": "string" }
+Response: { "token": "JWT" }
+Transaction
+Endpoint: POST /transaction
+Headers: Authorization: Bearer <token>
+Body: { "accountId": "uuid", "amount": "numeric", "transactionType": "string" }
+Response: 200 OK
